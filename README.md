@@ -5,4 +5,4 @@ Las pantallas responsive son el index y productos
 Necesitaria saber como puedo hacer para que la imagen de las publicaciones quede centrada en todas las dimenciones, si me lo pueden comentar se los agradezco
 
 link pages:
-link repositorio:
+link repositorio: https://github.com/fedeassale/preentrega2Assale.git
