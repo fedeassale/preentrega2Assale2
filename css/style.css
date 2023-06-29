@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: roboto;
+    background-attachment: fixed;
+}
+body{
+    font-size: 1em;
+    line-height: 2em;
+    background-color: #efefef;
+}
+.tamañologo{
+    padding-left: 1em;
+    width: 8em;
+}
+        nav{
+            background-color: rgb(8, 8, 63);
+            height:150px;
+        }   
+            nav ul{
+                list-style-type: none;
+                padding: 2em 1em;       
+        }
+                nav div ul li a{
+                    color: white;
+                    text-decoration: none;
+                }
+.botonera{
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 0.1em;
+    margin:1em;
+        }
+/* carrusel */
+section div img{
+    height: 400px;
+    object-fit: contain;
+}
+/* carrusel */
+.centrar{
+    text-align: center;
+}
+.derecha{
+    text-align: right;
+}
+.textoblanco{
+    color: rgb(239, 240, 242);
+}
+.negrita{
+    font-weight: bold
+}
+.text-grande{
+    font-size: larger;
+}
+.letratachada{
+    text-decoration-line: line-through;
+}
+/* imagen de promociones y nosotros */
+.img-centrar{
+    width: 30%;
+    margin: 1em auto;
+}
+.img-centrar img{
+    width: 100%;
+}
+/* imagen de promociones y nosotros */
+.style-none{
+    border: none;
+    text-decoration-line: underline;
+}
+/* publicaciones */
+.heigh-descripcion{
+    height: 15em;
+}
+.heigh-title{
+    height: 5em;
+}
+/* publicaciones */
+/* grid productos */
+.grid-body{
+    display: grid;
+    grid-template-columns: 20% 80% ;
+    grid-template-rows:150px 80% 10%;
+    grid-template-areas: 
+    "nav nav"
+    "sidebar main"
+    "footer footer";
+}
+.nav{
+    grid-area: nav;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 30px;
+    border-right: solid black;
+    border-width: 0.1px;
+}
+.sidebar div{
+    padding:3px;
+    margin:3px;
+    text-decoration: none;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+}
+.height--img{
+    height: 15em;
+    object-fit: cover;
+}
+.size-text{
+    font-size: medium ;
+}
+.width-figure{
+    width: 30%;
+    margin:1px;
+}
+/* boton de figure */
+div figure a{
+    width: 100%;
+}
+.letraancha {
+    font-size: 4em;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb( 8,8,63);
+    color: rgb(255, 255, 255);
+    height:auto;
+}
+footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 1em;
+}
+footer img{
+    height: 4em;
+    width: 5em;
+}
+.ml-2{
+    margin-left: 10px;
+}
+.tamaño-svglogo{
+    height: 40px;
+    width: 40px;
+    margin: 2em;
+}
+
+/* nosotros */
+.list-style{
+    list-style: none;
+}
+footer div a:hover{
+ color: cornflowerblue;
+}
+.iframe{
+    width: 600px;
+    height: 450px;
+}
+@media (width < 1200px){
+    /* productos */
+    .grid-body{
+        grid-template-columns: 100%;
+        grid-template-rows:auto auto auto auto;
+        grid-template-areas: 
+        "nav"
+        "sidebar"
+        "main"
+        "footer";
+    }
+    .sidebar{
+        display: none;
+    }
+}
+@media (width < 768px){
+    /* index */
+    .width-figure{
+        width:40%;
+    }
+    .tamaño-svglogo{
+        height: 20px;
+        width: 20px;
+        margin:1em;
+    }
+    /* footer */
+    footer {
+        flex-direction: column;
+        font-size: small;
+    }
+    footer a {
+        color: rgb(255, 255, 255);
+        margin: 0.2em;
+        text-decoration: none;
+    }
+    /* productos */
+    .size-text{
+        font-size: small;
+    }
+    .height--img{
+        height: 10em;
+        padding-left: 1em;
+    }
+}
+@media(width <590px){
+    .width-figure{
+        width: 100%;
+    }
+}
+@media(width <321px){
+    .width-figure{
+        width: 100%;
+    }
+    footer a {
+        margin: 0.2em;
+    }
+    .iframe{
+        width: 300px;
+        height: 200px;
+    }
+    .height--img{
+        padding-left: 4em;
+    }
+    figure p{
+        display: none;
+    }
+}
